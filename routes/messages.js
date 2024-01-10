@@ -1,3 +1,6 @@
+const { router } = require("../app");
+const db = require("../db");
+const ExpressError = require("../expressError");
 /** GET /:id - get detail of message.
  *
  * => {message: {id,
@@ -10,7 +13,9 @@
  * Make sure that the currently-logged-in users is either the to or from user.
  *
  **/
+router.get("/:id", async function (req, res, next){
 
+})
 
 /** POST / - post message.
  *
